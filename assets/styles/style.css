@@ -1,0 +1,499 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+.mobile-navbar {
+  display: none;
+  text-decoration: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+summary {
+  list-style: none;
+  /* display: none; */
+}
+
+
+.navbar {
+  height: 60px;
+  background-color: #0b2027;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  transition: 0.3s ease all;
+  font-size: 18px;
+  font-weight: 700;
+}
+.navbar h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 28px;
+}
+.navbar :hover {
+  color: cyan;
+  cursor: pointer;
+}
+.search {
+  border: transparent 2px;
+  display: flex;
+  align-items: center;
+}
+.search-input {
+  text-align: center;
+  height: 28px;
+  width: 300px;
+  font-size: 1rem;
+  border: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.search-icon {
+  height: 28px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  background-color: white;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  color: #0f1111;
+}
+.search:hover {
+  border: 2px solid cyan;
+}
+.panel {
+  background-image: url("../images/background.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: black;
+}
+.container {
+  width: 100%;
+  min-height: 500px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container h1 {
+  margin-top: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 55px;
+  font-weight: 400;
+  color: #fff;
+}
+.container p {
+  margin-top: 30px;
+  font-size: 40px;
+  color: #fff;
+}
+.container a {
+  text-decoration: none;
+  margin-top: 40px;
+  font-size: 19px;
+  color: white;
+  display: inline-block;
+  letter-spacing: 2px;
+  padding: 12px 20px;
+  border: 2px solid cyan;
+  box-shadow: rgb(30, 46, 133) 2px 2px 2px 2px;
+  background-color: transparent;
+  border-radius: 15px;
+  color: white;
+}
+.container a:hover {
+  background-color: #5d55d5;
+}
+
+.sections {
+  margin-top: 0px;
+  background-color: #007185;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sections a {
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+footer {
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.our-service {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+}
+
+.box {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  max-width: 320px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+.box-content {
+  padding: 15px;
+}
+
+.box-img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .our-service {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.box-content a {
+  color: #007185;
+  text-decoration: none;
+}
+.follow {
+  height: 40px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.follow a {
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 20px;
+}
+.follow a:hover {
+  color: darkorange;
+}
+.copy {
+  margin-top: 8px;
+  background-color: #0f1111;
+  height: 100px;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  font-size: 0.85rem;
+}
+.box-content h2 {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  html {
+    width: 120%;
+  }
+  .panel {
+    height: 100vh;
+    width: 100%;
+  }
+  .container h1 {
+    font-size: 2.5rem;
+  }
+  .container p {
+    font-size: 1.5rem;
+  }
+  .container a {
+    font-size: 1rem;
+  }
+  .container a:hover {
+    padding: 10px 15px;
+  }
+  .container {
+    width: 100%;
+    min-height: 500px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .box-img {
+    width: 100%;
+    height: 200px;
+  }
+  .box-content h2 {
+    font-size: 1.5rem;
+  }
+  .box-content p {
+    font-size: 1rem;
+  }
+  .box-content a {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 638px) {
+  .mobile-navbar {
+    display: block;
+    padding: 20px;
+    position: absolute;
+    /* margin-top: 100px; */
+    background-color: #0b2027;
+    color: white;
+  }
+  .mobile-navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    transition: 0.3s ease all;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .links{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .navbar {
+    display: none;
+  }
+  html {
+    width: 130%;
+  }
+}
+@media screen and (max-width: 587px) {
+  html {
+    width: 140%;
+  }
+}
+@media screen and (max-width: 508px) {
+  .panel {
+    height: 100vh;
+    width: 100%;
+  }
+  html {
+    width: 150%;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    width: 150%;
+  }
+  .container h1 {
+    font-size: 2rem;
+  }
+  .container p {
+    font-size: 1.2rem;
+  }
+  .container a {
+    font-size: 1rem;
+  }
+  .container a:hover {
+    padding: 10px 15px;
+  }
+  .box-img {
+    width: 100%;
+    height: 200px;
+  }
+  .box-content h2 {
+    font-size: 1.5rem;
+  }
+  .box-content p {
+    font-size: 1rem;
+  }
+  .box-content a {
+    font-size: 1rem;
+  }
+  .navbar {
+    height: 50px;
+  }
+  .navbar h2 {
+    font-size: 20px;
+  }
+  .navbar a {
+    font-size: 15px;
+  }
+  .search-input {
+    width: 200px;
+  }
+  .search-icon {
+    width: 30px;
+  }
+  .sections {
+    height: 30px;
+  }
+  .sections a {
+    font-size: 15px;
+  }
+  .follow a {
+    font-size: 20px;
+    letter-spacing: 10px;
+  }
+  .copy {
+    height: 80px;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  html {
+    width: 160%;
+  }
+  .container h1 {
+    font-size: 1.5rem;
+  }
+  .container p {
+    font-size: 1rem;
+  }
+  .container a {
+    font-size: 0.8rem;
+  }
+  .container a:hover {
+    padding: 10px 15px;
+  }
+  .box-img {
+    width: 100%;
+    height: 200px;
+  }
+  .box-content h2 {
+    font-size: 1.5rem;
+  }
+  .box-content p {
+    font-size: 1rem;
+  }
+  .box-content a {
+    font-size: 1rem;
+  }
+  .navbar {
+    height: 50px;
+  }
+  .navbar h2 {
+    font-size: 20px;
+  }
+  .navbar a {
+    font-size: 15px;
+  }
+  .search-input {
+    width: 200px;
+  }
+  .search-icon {
+    width: 30px;
+  }
+  .sections {
+    height: 30px;
+  }
+  .sections a {
+    font-size: 15px;
+  }
+  .follow a {
+    font-size: 20px;
+    letter-spacing: 10px;
+  }
+  .copy {
+    height: 80px;
+    padding: 20px;
+  }
+    
+}
+@media screen and (max-width: 360px) {
+  html {
+    width: 170%;
+  }
+  .container h1 {
+    font-size: 1.2rem;
+  }
+  .container p {
+    font-size: 0.8rem;
+  }
+  .container a {
+    font-size: 0.7rem;
+  }
+  .container a:hover {
+    padding: 10px 15px;
+  }
+  .box-img {
+    width: 100%;
+    height: 200px;
+  }
+  .box-content h2 {
+    font-size: 1.5rem;
+  }
+  .box-content p {
+    font-size: 1rem;
+  }
+  .box-content a {
+    font-size: 1rem;
+  }
+  .navbar {
+    height: 50px;
+  }
+  .navbar h2 {
+    font-size: 20px;
+  }
+  .navbar a {
+    font-size: 15px;
+  }
+  .search-input {
+    width: 200px;
+  }
+  .search-icon {
+    width: 30px;
+  }
+  .sections {
+    height: 30px;
+  }
+  .sections a {
+    font-size: 15px;
+  }
+  .follow a {
+    font-size: 20px;
+    letter-spacing: 10px;
+  }
+  .copy {
+    height: 80px;
+    padding: 20px;
+  }
+    
+}
