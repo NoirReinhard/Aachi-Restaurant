@@ -114,8 +114,7 @@ summary {
   display: inline-block;
   letter-spacing: 2px;
   padding: 12px 20px;
-  border: 2px solid cyan;
-  box-shadow: rgb(30, 46, 133) 2px 2px 2px 2px;
+  color: cyan;
   background-color: transparent;
   border-radius: 15px;
   color: white;
@@ -385,10 +384,20 @@ footer {
     font-size: 1.5rem;
   }
   .container p {
-    font-size: 1rem;
+    color: rgb(201, 198, 198);
+    font-size: 0.8rem;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
   }
   .container a {
-    font-size: 0.8rem;
+    color: cyan;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 10px;
+    text-align: center;
+    font-weight:500;
   }
   .container a:hover {
     padding: 10px 15px;
