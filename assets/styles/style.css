@@ -325,7 +325,11 @@ footer {
     font-size: 2rem;
   }
   .container p {
-    font-size: 1.2rem;
+    color: rgb(201, 198, 198);
+    font-size: 0.8rem;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
   }
   .container a {
     font-size: 1rem;
@@ -385,7 +389,6 @@ footer {
   }
   .container p {
     color: rgb(201, 198, 198);
-
     font-size: 0.8rem;
     margin-top: 10px;
     font-family: 'Times New Roman', Times, serif;
